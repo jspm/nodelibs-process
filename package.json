@@ -1,6 +1,6 @@
 {
-  "registry": "npm",
+  "registry": "jspm",
   "dependencies": {
-    "process": "^0.10.0"
+    "process": "npm:process@^0.10.0"
   }
 }
