@@ -68,8 +68,9 @@ Item.prototype.run = function () {
 };
 process.title = 'browser';
 process.browser = true;
-process.env = {};
-process.env.NODE_ENV = productionEnv ? 'production' : 'development';
+process.env = {
+    NODE_ENV: productionEnv ? 'production' : 'development'
+};
 process.argv = [];
 process.version = ''; // empty string to avoid regexp issues
 process.versions = {};
