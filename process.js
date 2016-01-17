@@ -1,6 +1,8 @@
 // From https://github.com/defunctzombie/node-process/blob/master/browser.js
 // shim for using process in browser
 
+var productionEnv = require('@system-env').production;
+
 var process = module.exports = {};
 var queue = [];
 var draining = false;
@@ -67,6 +69,7 @@ Item.prototype.run = function () {
 process.title = 'browser';
 process.browser = true;
 process.env = {};
+process.env.NODE_ENV = productionEnv ? 'production' : 'development';
 process.argv = [];
 process.version = ''; // empty string to avoid regexp issues
 process.versions = {};
