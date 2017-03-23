@@ -1,7 +1,7 @@
 {
   "main": "./process.js",
   "name": "jspm-nodelibs-process",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "map": {
     "./process.js": {
       "node": "./process-node.js"
